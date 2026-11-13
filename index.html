@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<title>UIDBuy spreadsheet | Fashion finds, sizing and QC</title>
+<meta name="description" content="Browse CAFANS fashion categories and use this UIDBuy spreadsheet guide to check seller links, compare sizing, review QC photos and estimate parcel costs.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="UIDBuy spreadsheet | Fashion finds, sizing and QC">
+<meta property="og:description" content="Browse fashion by category and check the details that matter before ordering.">
+<!--
+Search research: Direct Google results were inaccessible, so first-page rank and order could not be verified.
+Ten domains reviewed via available web results. Observed themes: uidbuyspreadsheet.org (category browsing and shortlists);
+uidbuysheet.com (marketplace finds); grails.fit (category collections and QC photos); w2cspreadsheet.com (agent workflow);
+uidbuy.net (listing verification); uidbuy.store (source links and variants); qcradar.com (brand filters and QC);
+uidbuyspreadsheet.com (brand-led discovery); uidbuy.lat (packing and weight); reddit.com (community link lists).
+Secondary keywords: UIDBuy product links, UIDBuy fashion finds, UIDBuy QC photos, UIDBuy shipping estimate.
+Long-tail targets: how to use a UIDBuy spreadsheet; UIDBuy spreadsheet for shoes; compare sneaker sizes in centimeters;
+check Nike sneaker size charts; compare hoodie chest widths; compare T-shirt measurements; check jacket sleeve length;
+compare pants waist and rise; check cap circumference; compare jersey fit; check bag dimensions before buying;
+check scarf dimensions and fabric; check necklace chain length; verify an original Weidian product link;
+match a Taobao listing variant; check a 1688 minimum order quantity; save the seller item ID;
+spot a stale spreadsheet link; ask for warehouse QC photos; compare QC photos with seller images;
+check shoe labels in QC photos; estimate packed parcel weight; compare actual and volumetric weight;
+estimate shipping by destination; compare total delivered cost; check parcel consolidation options.
+-->
+<style>
+:root{color-scheme:light;--ink:#182628;--muted:#435457;--paper:#f5f0e7;--white:#fffdf8;--line:#c8cdc5;--accent:#194c49}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font:1rem/1.6 system-ui,sans-serif}
+header,main,footer{width:min(1120px,calc(100% - 2rem));margin-inline:auto}
+header{display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--line)}
+a{color:var(--accent);text-underline-offset:.2em}
+a:focus-visible,summary:focus-visible{outline:3px solid #995319;outline-offset:4px}
+.brand{font-weight:800;letter-spacing:.12em}
+.hero{display:grid;grid-template-columns:1.15fr 1fr;gap:clamp(1rem,4vw,3rem);align-items:center;padding:2rem 0 1.5rem}
+h1,h2,h3,p,figure{margin:0}
+h1,h2{font-family:Georgia,serif;line-height:1.08}
+h1{font-size:clamp(2.6rem,6.6vw,5.6rem);letter-spacing:-.055em}
+h2{font-size:clamp(1.85rem,4vw,3rem);letter-spacing:-.035em}
+h3{line-height:1.3}
+p{margin-top:.65rem}
+img{display:block;width:100%;height:auto;background:#eeeae2}
+.hero img{aspect-ratio:16/9;object-fit:contain;background:var(--white);border:1px solid var(--line);border-radius:.5rem}
+figcaption,.note{color:var(--muted);font-size:.9rem}
+figcaption{margin-top:.35rem}
+.categories{padding:1.2rem;background:var(--accent);color:#fff;border-radius:.5rem}
+.categories ul{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:.55rem;list-style:none;padding:0;margin:.85rem 0 0}
+.categories a{display:flex;align-items:center;min-height:48px;height:100%;padding:.5rem .7rem;color:var(--ink);background:var(--white);border-radius:.25rem;font-weight:650;overflow-wrap:anywhere}
+section{margin:2.3rem 0}
+.grid,.guides{display:grid;gap:.85rem;margin-top:1rem}
+.grid{grid-template-columns:repeat(5,minmax(0,1fr))}
+.grid img{aspect-ratio:1;object-fit:contain;background:var(--white);border:1px solid var(--line);border-radius:.35rem}
+.guides{grid-template-columns:repeat(2,minmax(0,1fr))}
+article{background:var(--white);border:1px solid var(--line);border-radius:.5rem;padding:1.15rem}
+details{border-bottom:1px solid var(--line);padding:.8rem 0}
+summary{cursor:pointer;font-weight:700}
+footer{border-top:1px solid var(--line);padding:1rem 0 1.5rem}
+@media(max-width:740px){.hero,.guides{grid-template-columns:1fr}.categories ul,.grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "name": "UIDBuy spreadsheet | Fashion finds, sizing and QC",
+  "inLanguage": "en",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is a UIDBuy spreadsheet?",
+      "acceptedAnswer": {"@type": "Answer", "text": "It is a list of product leads, typically organized by category. Reopen the original marketplace listing to confirm the seller, selected option and current availability."}
+    },
+    {
+      "@type": "Question",
+      "name": "Where do the category links go?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Each category opens its matching collection on CAFANS. This page is an independent guide and has no official affiliation with UIDBuy or the featured brands."}
+    },
+    {
+      "@type": "Question",
+      "name": "Can QC photos confirm authenticity?",
+      "acceptedAnswer": {"@type": "Answer", "text": "QC photos help check visible details, condition and sizing. For authenticity, seek verifiable provenance or a qualified authentication service."}
+    },
+    {
+      "@type": "Question",
+      "name": "When can I get a useful UIDBuy shipping estimate?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Use the packed parcel weight and outer dimensions once available. Compare quotes for the same destination, parcel and service terms."}
+    }
+  ]
+}
+</script>
+<link rel="canonical" href="https://kakobuyfinds.github.io/wsaob/">
+</head>
+<body>
+<header>
+  <a class="brand" href="https://www.cafans.com">CAFANS</a>
+  <a href="https://www.cafans.com">Browse the catalog</a>
+</header>
+<main>
+  <div class="hero">
+    <div>
+      <h1>UIDBuy spreadsheet</h1>
+      <p>Find shoes, clothing and accessories by category. Before ordering, use the guides below to confirm the seller’s listing, measure for fit and check what goes into your parcel quote.</p>
+    </div>
+    <figure>
+      <img src="https://www.buzzsneakers.rs/files/images/slike-proizvoda/media/CW2/CW2288-111/images/CW2288-111.jpg" width="640" height="360" fetchpriority="high" loading="eager" alt="Side view of a white Nike Air Force 1 ’07 low-top sneaker">
+      <figcaption>Nike Air Force 1 ’07. Photo from Buzz Sneakers.</figcaption>
+    </figure>
+  </div>
+
+  <nav class="categories" aria-labelledby="categories">
+    <h2 id="categories">Shop by category</h2>
+    <ul>
+      <li><a href="https://cafans.com/category-911-Shoes.html">Shoes</a></li>
+      <li><a href="https://cafans.com/category-912-Hoodies%2FSweaters.html">Hoodies/Sweaters</a></li>
+      <li><a href="https://cafans.com/category-913-T-Shirts.html">T-Shirts</a></li>
+      <li><a href="https://cafans.com/category-914-Jackets.html">Jackets</a></li>
+      <li><a href="https://cafans.com/category-915-Pants%2FShorts.html">Pants/Shorts</a></li>
+      <li><a href="https://cafans.com/category-916-Headwear.html">Headwear</a></li>
+      <li><a href="https://cafans.com/category-917-Sets.html">Sets</a></li>
+      <li><a href="https://cafans.com/category-918-underwear%2Funderpants.html">Underwear/underpants</a></li>
+      <li><a href="https://cafans.com/category-919-Jersey.html">Jersey</a></li>
+      <li><a href="https://cafans.com/category-920-Accessories.html">Accessories</a></li>
+    </ul>
+  </nav>
+
+  <section aria-labelledby="references">
+    <h2 id="references">Fit and finish references</h2>
+    <p class="note">Editorial examples. Check individual listings for availability and the exact item pictured.</p>
+    <div class="grid">
+      <figure>
+        <img src="https://samtabak.com/cdn/shop/files/AURORA_BV2654-010_PHSFH001-2000.jpg?v=1740500771&amp;width=360" width="360" height="360" loading="lazy" decoding="async" alt="Black Nike Club Fleece pullover hoodie with a white chest logo">
+        <figcaption>Nike hoodie · Sam Tabak</figcaption>
+      </figure>
+      <figure>
+        <img src="https://www.fashionphile.com/cdn/shop/files/3c23586f09b6e1e9cf5f738c46ce7476.jpg?v=1776971082&amp;width=360" width="360" height="360" loading="lazy" decoding="async" alt="Louis Vuitton Monogram Speedy 25 bag with rolled leather handles">
+        <figcaption>Louis Vuitton bag · Fashionphile</figcaption>
+      </figure>
+      <figure>
+        <img src="https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1761588035/857596_3HBIM_2566_001_100_0000_Light-gorra-de-beisbol-de-canvas-gg.jpg" width="360" height="360" loading="lazy" decoding="async" alt="Gucci baseball cap in beige and brown GG canvas">
+        <figcaption>Gucci cap · Gucci</figcaption>
+      </figure>
+      <figure>
+        <img src="https://a.1stdibscdn.com/hermes-multi-les-clefs-silk-scarf-gold-tone-hardware-multicolor-hermes-for-sale/22569652/v_160375721654859127629/v_16037572_1654859128445_bg_processed.jpg?width=384" width="360" height="360" loading="lazy" decoding="async" alt="Hermès Les Clefs silk scarf with gold key motifs">
+        <figcaption>Hermès scarf · 1stDibs</figcaption>
+      </figure>
+      <figure>
+        <img src="https://assets.christiandior.com/is/image/diorprod/N1583DVOCYD301_E01?%24default_GHC%24=&amp;crop=234%2C96%2C1518%2C1492&amp;wid=360" width="360" height="360" loading="lazy" decoding="async" alt="Gold-tone Dior Dio(r)evolution choker with crystal lettering">
+        <figcaption>Dior choker · Dior</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section aria-labelledby="guides">
+    <h2 id="guides">Buying guides</h2>
+    <div class="guides">
+      <article>
+        <h3>Check UIDBuy product links before ordering</h3>
+        <p>Open the original Weidian or Taobao listing and select the size and color yourself. For a 1688 listing, check the minimum order quantity and confirm whether the displayed price is per item or per pack. Save the seller item ID, selected variant and date so you can spot a stale spreadsheet link or a listing that has changed.</p>
+      </article>
+      <article>
+        <h3>Compare the fit of UIDBuy fashion finds</h3>
+        <p>For shoes, measure both feet and use the longer foot when checking the seller’s size chart in centimeters. Compare hoodie chest width, T-shirt length and jacket sleeves with pieces you already own. For pants, compare waist and rise. Check whether the seller measured garments flat, especially for jerseys and adjustable caps.</p>
+        <p>For accessories, check bag dimensions, scarf size and fabric, and necklace chain length. A photo alone rarely gives you a reliable sense of scale.</p>
+      </article>
+      <article>
+        <h3>What to look for in UIDBuy QC photos</h3>
+        <p>If warehouse photos are available, compare the exact variant with the original listing. For shoes, check both size labels and look at the heels side by side. For clothing, check the seams and ask for a tape-measure photo if fit is uncertain. For a bag or choker, ask for a clear view of the zipper or clasp before sending the parcel.</p>
+      </article>
+      <article>
+        <h3>Compare parcel quotes for your destination</h3>
+        <p>Use the final carton measurements to compare actual and volumetric weight under each carrier’s rules. If you plan to consolidate orders, request the dimensions for the combined parcel. Check service coverage for your postcode, then include the item total, domestic delivery, agent fees, international freight and any applicable import charges when comparing the delivered cost.</p>
+      </article>
+    </div>
+  </section>
+
+  <section aria-labelledby="faq">
+    <h2 id="faq">Frequently asked questions</h2>
+    <details>
+      <summary>What is a UIDBuy spreadsheet?</summary>
+      <p>It is a list of product leads, typically organized by category. Reopen the original marketplace listing to confirm the seller, selected option and current availability.</p>
+    </details>
+    <details>
+      <summary>Where do the category links go?</summary>
+      <p>Each category opens its matching collection on CAFANS. This page is an independent guide and has no official affiliation with UIDBuy or the featured brands.</p>
+    </details>
+    <details>
+      <summary>Can QC photos confirm authenticity?</summary>
+      <p>QC photos help check visible details, condition and sizing. For authenticity, seek verifiable provenance or a qualified authentication service.</p>
+    </details>
+    <details>
+      <summary>When can I get a useful UIDBuy shipping estimate?</summary>
+      <p>Use the packed parcel weight and outer dimensions once available. Compare quotes for the same destination, parcel and service terms.</p>
+    </details>
+  </section>
+</main>
+<footer><a href="https://www.cafans.com">Explore CAFANS</a></footer>
+</body>
+</html>
